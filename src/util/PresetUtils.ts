@@ -30,8 +30,9 @@ export const defaults = {
   speed: 50,
   length: 1,
   format: {
-    color: '&#$1$2$3$4$5$6$f$c',
-    char: '&',
+    // color: '&#$1$2$3$4$5$6$f$c',
+    color: '¨$1$2$3$4$5$6$f$c', // it's required for valid formatting
+    char: '§',
   } as format,
   prefixsuffix: '',
   customFormat: false,

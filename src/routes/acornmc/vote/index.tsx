@@ -1,15 +1,7 @@
-import { component$, useVisibleTask$ } from '@builder.io/qwik';
 import type { DocumentHead } from '@builder.io/qwik-city';
+import { component$ } from '@builder.io/qwik';
 
 export default component$(() => {
-  // eslint-disable-next-line qwik/no-use-visible-task
-  useVisibleTask$(() => {
-    window.open('https://bit.ly/acornmc1');
-    window.open('https://bit.ly/acornmc2');
-    window.open('https://bit.ly/acornmc3');
-    window.open('https://bit.ly/acornmc6');
-  });
-
   return (
     <section class="flex flex-col gap-3 mx-auto max-w-7xl px-6 items-center justify-center min-h-svh pt-[72px]">
       <h1 class="font-bold text-gray-50 text-4xl sm:text-6xl mb-4">

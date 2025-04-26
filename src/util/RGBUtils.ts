@@ -3,7 +3,7 @@ import { defaults } from './PresetUtils';
 import { sortColors } from './SharedUtils';
 
 export function hex(c: number) {
-  const s = '0123456789ABCDEF';
+  const s = '0123456789abcdef';
   let i = c;
   if (i == 0 || isNaN(c)) { return '00'; }
   i = Math.round(Math.min(Math.max(0, i), 255));
@@ -100,7 +100,7 @@ export function getBrightness(RGBAcolor: number[]) {
 }
 
 export function getRandomColor() {
-  const letters = '0123456789ABCDEF';
+  const letters = '0123456789abcdef';
   let color = '#';
   for (let i = 0; i < 6; i++) {
     color += letters[Math.floor(Math.random() * 16)];
